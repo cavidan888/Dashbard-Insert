@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Play_Store"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Login Register" Height="450" Width="1000">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DockPanel HorizontalAlignment="Left" Height="160" LastChildFill="False" VerticalAlignment="Top" Width="360" Margin="107,46,0,0"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="216" Margin="339,118,0,0" VerticalAlignment="Top" Width="444" RenderTransformOrigin="0.393,0.105">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.277"/>
+                    <TranslateTransform X="-0.307" Y="0.185"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <TextBlock TextWrapping="Wrap"  Background="Blue"
+                       Margin="-1,0,-1,176" Foreground="White" Padding="10,7,0,0" ><Run Text="Login/Regist"/><Run Text="er"/><Run Text=" "/></TextBlock>
+
+
+        </Border>
+
+        <TextBox TextWrapping="Wrap" Text="" Margin="413,176,260,214"/>
+
+        <Image Source="C:\Users\user\Downloads\istf.png" Margin="378,172,0,214" HorizontalAlignment="Left" RenderTransformOrigin="0.436,-0.336" Width="22"/>
+
+        <TextBox TextWrapping="Wrap" Text="" Margin="415,223,258,166"/>
+
+        <Image Source="C:\Users\user\Downloads\acar1.png" Margin="375,223,0,166" HorizontalAlignment="Left" RenderTransformOrigin="0.436,-0.336"  Width="32"/>
+        <Button Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Margin="448,268,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
+        <Button Content="Login"  HorizontalAlignment="Left" Margin="581,268,0,0" VerticalAlignment="Top" Width="108" Height="30"/>
+
     </Grid>
 </Window>

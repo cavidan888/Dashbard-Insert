@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Play_Store.View;
 
 namespace Play_Store
 {
@@ -23,6 +24,19 @@ namespace Play_Store
         public MainWindow()
         {
             InitializeComponent();
+            RegisterButton.Click += OpenAndFillInfo;
+        }
+
+        private void OpenAndFillInfo(object sender, RoutedEventArgs e)
+        {
+            Register_Window rw = new Register_Window();
+            rw.Show();
+            this.Hide();
+        }
+
+        public void FillDatas()
+        {
+
         }
     }
 }
